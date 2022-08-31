@@ -15,7 +15,7 @@ const items = [{
         text: 'Paragraph 3',
         colorText: 'green',
     }]
-    
+function create(items) {
      for (let index = 0; index < items.length; index++) {
         const p = document.createElement('p');
         const titl = document.createElement('h1');
@@ -25,11 +25,10 @@ const items = [{
          wrapper.appendChild(p);
          p.style.color = items[index].colorText;
          titl.style.color = items[index].colorText;
-         
-
      }
-
+    }
    
+create(items)
 
 
 
